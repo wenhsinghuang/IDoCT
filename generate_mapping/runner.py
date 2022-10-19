@@ -58,6 +58,8 @@ class Runner:
         if self.module == "alluxio-core":
             if "alluxio.ConfigurationRule" in trace:
                 return True
+        if self.module == "camel-core":
+            return True
         return False
 
     def skipTrace(self, trace):

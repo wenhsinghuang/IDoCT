@@ -32,7 +32,7 @@ MVN_TEST_PATH = {
     "hbase-server": os.path.join(CTEST_HBASE_DIR, SRC_SUBDIR["hbase-server"]),
     "zookeeper-server": os.path.join(CTEST_ZOOKEEPER_DIR, SRC_SUBDIR["zookeeper-server"]),
     "alluxio-core": os.path.join(CTEST_ALLUXIO_DIR, SRC_SUBDIR["alluxio-core"]),
-    "camel-core": os.path.join(CTEST_ALLUXIO_DIR, SRC_SUBDIR["camel-core"]),
+    "camel-core": os.path.join(CTEST_CAMEL_DIR, SRC_SUBDIR["camel-core"]),
 }
 
 LOCAL_CONF_PATH = {

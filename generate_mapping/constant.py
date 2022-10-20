@@ -38,11 +38,12 @@ MVN_TEST_PATH = {
 LOCAL_CONF_PATH = {
     "hadoop-common": "results/hadoop-common/conf_params.txt",
     "hadoop-hdfs": "results/hadoop-hdfs/conf_params.txt",
-    "hbase-server": "results/hbase-server/conf_params.txt",
+    "hbase-server": "ressults/hbase-server/conf_params.txt",
     "zookeeper-server": "results/zookeeper-server/conf_params.txt",
     "alluxio-core": "results/alluxio-core/conf_params.txt",
     "camel-core": "results/camel-core/conf_params.txt"
 }
+
 
 SUREFIRE_SUBDIR = "target/surefire-reports/*"
 

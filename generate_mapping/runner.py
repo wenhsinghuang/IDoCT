@@ -102,7 +102,7 @@ class Runner:
                 assert line.split(" ")[0] == "[CTEST][GET-PARAM]"
                 assert line.count(" ") == 1, "more than one whitespace in " + line
                 param_name = line.split(" ")[1]
-                if param_name in self.params:
+                if param_name in self.params or self.module=="camel-core":
                     is_getter = True 
                     self.getter_record.write(method + " " + param_name + "\n")
                     self.getter_record.flush()
@@ -112,7 +112,7 @@ class Runner:
                 assert line.split(" ")[0] == "[CTEST][SET-PARAM]"
                 assert line.count(" ") == 2, "more than one whitespace in " + line
                 param_name = line.split(" ")[1]
-                if param_name in self.params:
+                if param_name in self.params or self.module=="camel-core":
                     if self.aggressive or self.setInTest(line.split(" ")[2]):
                         is_setter = True
                         self.setter_record.write(method + " " + param_name + "\n")

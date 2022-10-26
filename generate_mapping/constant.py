@@ -71,31 +71,7 @@ CTEST_SUREFIRE_PATH = {
         os.path.join(CTEST_ALLUXIO_DIR, "core/server/master", SUREFIRE_SUBDIR)
     ],
     "camel-core": [
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-util", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-api", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core-catalog", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-support", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-management-api", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-management", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-base", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-base-engine", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-xml-io-util", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-xml-jaxp", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-cluster", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core-engine", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core-languages", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core-model", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core-processor", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core-reifier", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-xml-io", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-xml-jaxb", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core-xml", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-cloud", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-health", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-console", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-main", SUREFIRE_SUBDIR),
-        os.path.join(CTEST_CAMEL_DIR, "core/camel-core-all", SUREFIRE_SUBDIR)
+        os.path.join(CTEST_CAMEL_DIR, "core/camel-core", SUREFIRE_SUBDIR)
     ]
 }
 

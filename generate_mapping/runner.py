@@ -102,11 +102,11 @@ class Runner:
                 assert line.split(" ")[0] == "[CTEST][GET-PARAM]"
                 assert line.count(" ") == 1, "more than one whitespace in " + line
                 param_name = line.split(" ")[1]
-                if param_name in self.params:
+                if param_name in self.params or self.module == "came;-core":
                     is_getter = True 
                     self.getter_record.write(method + " " + param_name + "\n")
                     self.getter_record.flush()
-            elif "[CTEST][SET-PARAM]" in line:
+            elif "[CTEST][SET-PARAM]" in line or self.module == "came;-core":
                 line = line[line.find("[CTEST][SET-PARAM]"):]
                 assert line.startswith("[CTEST][SET-PARAM] "), "wrong line: " + line
                 assert line.split(" ")[0] == "[CTEST][SET-PARAM]"
